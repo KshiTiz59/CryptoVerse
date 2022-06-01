@@ -1,5 +1,15 @@
-# Getting Started with Create React App
+# CryptoApp
+A website where you can get the real time crypto currency price , rank  , total Supply and availability at any instant of time by searchig . 
 
+Technology used : ReactJs, Javascript. 
+Api used : https://api.coinstats.app/public/v1/coins?skip=0 
+
+
+
+
+# Link for Website : https://cryptocurrency1.herokuapp.com/
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
