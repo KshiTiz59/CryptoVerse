@@ -1,0 +1,226 @@
+body{
+
+    background-color:#f8f8f8;
+}
+
+.coin{
+  position: relative;
+    margin: 50px 10px 10px 35px;
+    /* margin: auto; */
+    width: 370px;
+    height: 320px;
+    background-color:white;
+    border: 10px solid white;
+    border-radius: 15px;
+    box-shadow: 10px 20px 5px rgba(12, 12, 12, 0.15);
+}
+.coin:hover{
+    box-shadow: 10px 20px 5px rgba(3, 228, 202, 0.15);
+
+}
+.coin is{
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    background: #af43f1;
+    margin-top: 10px;
+    margin-left: -10px ;
+    left: -15px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+}
+.image{
+    width: 100px;
+    height: 100px;
+    /* margin: 57px 0 0  138px; */
+}
+.title{
+    margin-left: 15px;
+
+}
+a{
+    text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+color: #000;
+    width: 200px;
+    font-weight: bolder;
+}
+.desc{
+font-family: 'Montserrat', sans-serif;
+margin-left: 20px;
+}
+.moment{
+    margin-top: 8px;
+    margin-left: auto;
+    color:royalblue;
+}
+.coin is::before{
+content: '';
+position: absolute;
+top: 50px;
+width: 15px;
+height: 30px;
+background:#8045c6;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+z-index: 2;
+}
+.coin is::after{
+    content: '';
+position: absolute;
+top: 50px;
+width: 15px;
+height: 15px;
+background: #af43f1;
+z-index: 1;
+}
+ .logo{
+    width: 90px;
+margin: 65px 18px 105px 22px ;
+}
+
+.xx {
+    width: 385px;
+    height: 250px;
+    margin: auto;
+}
+span{
+    display: flex;
+}
+ .name{
+display: flex;
+flex-direction: column;
+margin-top: 17px;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: 600;
+color: white;
+}
+.price{
+margin-top: 10px;
+font-family: 'Montserrat', sans-serif;
+ font-size: 16px;
+ color: #000;
+}
+.symbol{
+margin-top: 10px;
+color: #000;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+}
+ .source{
+    width: 30px;
+    height: 30px;
+}
+.pname{
+    font-size: 10px;
+    font-weight: 600;
+font-family: 'Montserrat', sans-serif;
+color: blue;
+margin-left: 5px;
+}
+.rank{
+    margin-top: 30px;
+color: #000;
+
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+}
+.market{
+    color: #000;
+    margin-top: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+margin-left: -100px;
+}
+.btn{
+    display: flex;
+    width: 100px;
+    height: 35px;
+    margin:10px 10px 10px 50px;
+    border: 3px solid red;
+    border-radius: 5px ;
+    cursor: pointer;  
+}
+button{
+    cursor: pointer;  
+
+}
+
+@media screen and (max-width:490px) {
+    .coin{
+
+        margin: 50px 10px 10px 10px;
+        /* margin: auto; */
+        width: 300px;
+        height: 350px;
+        background-color:white;
+        border: 10px solid white;
+        border-radius: 15px;
+    }
+    .coin is{
+        position: absolute;
+        width: 330px;
+        height: 50px;
+        background: #af43f1;
+        margin-top: 10px;
+        margin-left: -10px ;
+        left: -15px;
+        border-radius: 30px;
+        border-bottom-left-radius: 0;
+    }
+    .coin is::before{
+        content: '';
+        position: absolute;
+        top: 50px;
+        width: 15px;
+        height: 30px;
+        background:#8045c6;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        z-index: 2;
+        }
+        .coin is::after{
+            content: '';
+        position: absolute;
+        top: 50px;
+        width: 15px;
+        height: 15px;
+        background: #af43f1;
+        z-index: 1;
+        }
+
+.name{
+font-size: 15px;
+font-family: 'Montserrat', sans-serif; 
+font-weight: 600;
+}
+.price{
+    font-family: 'Montserrat', sans-serif;
+     font-size: 13px;
+    }
+    .symbol{
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        
+        }
+        .market{
+            margin-top: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            
+            }
+        .xx {
+            width: 322px;
+            height: 239px;
+        }
+        .rank{
+            margin-top: 30px;
+        color: #000;
+        
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        }
+}
