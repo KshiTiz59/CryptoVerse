@@ -5,7 +5,6 @@ import log from "../Components/pngwing.com.png"
 const Home = () => {
   return (
     <>
-   
     <div className="animat">
     <div className='conto'>
     <div className='bubbles'>
