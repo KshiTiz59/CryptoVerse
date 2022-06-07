@@ -5,6 +5,8 @@ import { FcSearch} from "react-icons/fc";
 import {   AiOutlineDollarCircle, AiOutlineThunderbolt , AiOutlineTrophy} from "react-icons/ai";
 import { GiRank3 } from "react-icons/gi";
 import millify from "millify";
+import {Bar} from  'react-chartjs-2'   ; 
+import Chart from "../Components/Chart";
 const Desc = () => {
      const[search , setsearch ] = useState("") ; 
      const[uuid , setuuid] =  useState("") ; 
@@ -21,9 +23,9 @@ const Desc = () => {
         const getU = async ()=>{
     
          const profile = await fetch(`https://coinranking1.p.rapidapi.com/coins?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h&tiers%5B0%5D=1&orderBy=marketCap&search=${search}&orderDirection=desc&limit=100&offset=0`, options)
-            const jsonprofile = await profile.json() ;
+            var jsonprofile = await profile.json() ;
             setuuid(jsonprofile.data.coins[0].uuid); 
-             console.log(jsonprofile.data.coins[0].uuid)  ; 
+             console.log(uuid)  ; 
              const d = await fetch(`https://coinranking1.p.rapidapi.com/coin/${jsonprofile.data.coins[0].uuid}?referenceCurrencyUuid=yhjMzLPhuIDl&timePeriod=24h`, options) ; 
           const jsd = await d.json() ;      
           setdesc(jsd.data) ; 
@@ -101,6 +103,11 @@ const Desc = () => {
                        </div>
                       
                    </div>
+                   </div>
+                   <div className='chart'>
+                        <div className="chart1">
+                        <Chart uid={uuid} />
+                        </div>
                    </div>
                 </div>
             )

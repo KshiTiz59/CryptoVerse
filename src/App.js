@@ -2,6 +2,7 @@ import Crypto from "./Components/Crypto"
 import Home from "./Components/Home";
 import Cryotonews from "./Components/Cryotonews";
 import Desc from "./Components/Desc";
+import Chart from "./Components/Chart"
 import {
   BrowserRouter ,
   Route,
@@ -10,6 +11,7 @@ Routes
 function App() {
   return (
     <BrowserRouter>
+ 
     <Routes>
     <Route  exact path ="/" element={<Home/>}/> 
     <Route  path="/cryptoprice" element={<Crypto/>}/>
