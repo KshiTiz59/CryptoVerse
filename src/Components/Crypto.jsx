@@ -7,7 +7,8 @@ const Crypto=()=>{
    const  getData= async ()=>{
            try{
             const Data = await fetch('https://api.coinstats.app/public/v1/coins?skip=0') ;
-            const jsonData =  await Data.json() ;  
+            const jsonData =  await Data.json() ; 
+            console.log(jsonData) ; 
               setCoin(jsonData.coins) ;  
             console.log(jsonData) ;  
            }
@@ -24,7 +25,7 @@ const Crypto=()=>{
             return data.name.toLowerCase().includes(searchcoin.toLowerCase()) ; 
         })
          const data = filterdata.map( (value)=>{
-            return <CryptoCoin name={value.name} icon={value.icon} price={value.price} symbol={value.symbol} marketCap ={value.marketCap} rank={value.rank} total ={value.totalSupply} web ={value.websiteUrl} Avail={value.availableSupply}/>  ; 
+            return <CryptoCoin name={value.name} ico={value.icon} price={value.price} symbol={value.symbol} marketCap ={value.marketCap} rank={value.rank} total ={value.totalSupply} web ={value.websiteUrl} Avail={value.availableSupply}/>  ; 
    })
    
     return (
