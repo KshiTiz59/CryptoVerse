@@ -7,7 +7,7 @@ Api used : https://api.coinstats.app/public/v1/coins?skip=0
 
 
 
-# Link for Website : https://cryptocurrency1.herokuapp.com/
+# Link for Website : https://kkcryptocurrency.netlify.app/
 
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
