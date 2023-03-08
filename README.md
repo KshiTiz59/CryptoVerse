@@ -1,5 +1,5 @@
 # CryptoApp
-A website where you can get the real time crypto currency price , rank  , total Supply and availability at any instant of time by searchig . 
+A website where you can get the real time crypto currency price , rank  , total Supply and availability at any instant of time by searching . 
 
 Technology used : ReactJs, Javascript. 
 Api used : https://api.coinstats.app/public/v1/coins?skip=0 
